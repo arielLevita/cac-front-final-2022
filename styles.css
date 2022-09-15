@@ -1,0 +1,68 @@
+nav, #lugar-description {
+    background-color: rgb(53, 58, 64);
+}
+
+#comprar-tickets {
+    color: green;
+}
+
+#carousel-background {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.carousel-inner {
+    z-index: -1;
+}
+
+header .btn:hover {
+    box-shadow: 0 4px 20px 0 rgb(194, 194, 194);
+}
+
+header .btn:hover:first-of-type {
+    background-color: transparent;
+}
+
+#lugar .btn:hover {
+    background-color: transparent;
+    box-shadow: 0 4px 20px 0 rgb(194, 194, 194);
+}
+
+form .btn {
+    background-color: rgb(150, 201, 62);
+}
+
+#form-btn:hover {
+    background-color: rgb(150, 201, 62);
+    box-shadow: 0 4px 10px 0 rgb(49, 49, 49);
+}
+
+footer {
+    background-color: rgb(27, 55, 69);
+}
+
+footer li {
+    max-width: 10rem;
+    align-self: center;
+    
+}
+
+@media screen and (max-width: 650px) {
+    h1 {
+        margin-bottom: 5px;
+    }
+    
+    #header-text {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    header h1 {
+        display: none;
+    }
+
+    header .btn {
+        display: none;
+    }
+}

@@ -43,15 +43,14 @@ footer {
 footer li {
     max-width: 10rem;
     align-self: center;
-    
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 550px) {
     h1 {
         margin-bottom: 5px;
     }
     
-    #header-text {
+    p {
         font-size: 12px;
         margin-bottom: 5px;
     }

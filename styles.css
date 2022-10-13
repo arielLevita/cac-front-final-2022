@@ -27,6 +27,18 @@ header .btn:hover:first-of-type {
     box-shadow: 0 4px 20px 0 rgb(194, 194, 194);
 }
 
+input[placeholder] {
+    text-overflow: ellipsis;
+}
+
+#totalAPagar {
+    background-color: rgb(204, 229, 255);
+}
+
+#floatingComment { 
+    min-height: 100px;
+}
+
 form .btn {
     background-color: rgb(150, 201, 62);
 }

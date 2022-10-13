@@ -38,7 +38,7 @@
                         <a class="nav-link" href="#participar">Conviértete en orador</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="comprar-tickets" href="#">Comprar tickets</a>
+                        <a class="nav-link" id="comprar-tickets" href="/tickets/tickets.html">Comprar tickets</a>
                     </li>
                 </ul>
             </div>
@@ -69,7 +69,7 @@
                             <p class="text-end" id="header-text">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
                             <div class="container d-flex justify-content-end m-0 p-0">
                                 <button type="button" class="btn btn-outline-light text-light me-3"><a class="nav-link" href="#participar">Quiero ser orador</a></button>
-                                <button type="button" class="btn btn-success ">Comprar tickets</button>
+                                <button type="button" class="btn btn-success"><a class="nav-link" href="/tickets/tickets.html">Comprar tickets</a></button>
                             </div>
                         </div>
                     </div>
@@ -147,16 +147,17 @@
 
             <form action="#" autocomplete="on" class="needs-validation">
                 <div class="container col-lg-6 col-md-8 d-flex flex-column">
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <input type="text" class="form-control" placeholder="Nombre" name="nombre" required>
+                    <div class="row g-2">
+                        <div class="col-md-6 mb-2">
+                            <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="floatingNombre" required>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <input type="text" class="form-control" placeholder="Apellido" name="apellido" required>
+                        <div class="col-md-6 mb-2">
+                            <input type="text" class="form-control" placeholder="Apellido" name="apellido" id="floatingApellido" required>
                         </div>
                     </div>
-                    <div class="w-100 mb-3">
-                        <textarea class="form-control" rows="4" id="comment" name="text" placeholder="Sobre qué quieres hablar?" required></textarea>
+                    <div class="form-floating w-100 mb-3">
+                        <textarea class="form-control" id="floatingComment" name="text" placeholder="Sobre qué quieres hablar?" required></textarea>
+                        <label for="floatingComment">Sobre qué quieres hablar?</label>
                         <small>Recuerda incluir un título para tu charla.</small>
                     </div>
                     <div class="d-grid mb-3">

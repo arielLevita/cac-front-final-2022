@@ -31,7 +31,7 @@ input[placeholder] {
     text-overflow: ellipsis;
 }
 
-#totalAPagar {
+#totalAPagar-box {
     background-color: rgb(204, 229, 255);
 }
 
@@ -43,7 +43,7 @@ form .btn {
     background-color: rgb(150, 201, 62);
 }
 
-#form-btn:hover {
+#btn-enviar:hover, #btn-resumen:hover, #btn-borrar:hover {
     background-color: rgb(150, 201, 62);
     box-shadow: 0 4px 10px 0 rgb(49, 49, 49);
 }

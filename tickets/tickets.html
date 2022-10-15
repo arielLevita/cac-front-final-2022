@@ -79,12 +79,12 @@
             </div>
 
             <form action="#" autocomplete="on" class="needs-validation">
-                <div class="container col-lg-6 col-md-8 d-flex flex-column">
-                    <div class="row mb-3">
-                        <div class="col-md-6 pe-1">
+                <div class="container col-lg-6 col-md-8">
+                    <div class="row mb-3 g-1">
+                        <div class="col-sm-6">
                             <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="floatingNombre">
                         </div>
-                        <div class="col-md-6 ps-1">
+                        <div class="col-sm-6">
                             <input type="text" class="form-control" placeholder="Apellido" name="apellido" id="floatingApellido">
                         </div>
                     </div>
@@ -93,12 +93,12 @@
                         <input type="email" class="form-control" placeholder="Correo" name="email" id="floatingCorreo">
                     </div>
 
-                    <div class="row mb-3">
-                        <div class="col-md-6 pe-1">
+                    <div class="row mb-3 g-1">
+                        <div class="col-sm-6">
                             <label for="inputCantidad" class="mb-1">Cantidad</label>
                             <input type="number" class="form-control" placeholder="cantidad" name="cantidad" id="inputCantidad" required>
                         </div>
-                        <div class="col-md-6 ps-1">
+                        <div class="col-sm-6">
                             <label for="inputCategoria" class="mb-1">Categoría</label>
                             <select name="categoria" id="inputCategoria" class="form-select">
                                 <option value="estudiante" selected>Estudiante</option>
@@ -108,16 +108,17 @@
                         </div>
                     </div>
 
-                    <div class="col rounded-2 my-3" id="totalAPagar">
+                    <div class="col rounded-2 d-flex my-3" id="totalAPagar-box">
                         <p class="text-primary p-3 my-auto">Total a Pagar: $</p>
+                        <p class="text-primary p-3 m-auto fw-bolder" id="precioTotal"></p>
                     </div>
 
-                    <div class="row mt-3">
-                        <div class="d-grid col-md-6 pe-1 mb-3">
-                            <button class="btn text-light" type="" id="form-btn">Borrar</button>
+                    <div class="row my-3 g-1">
+                        <div class="d-grid col-sm-6">
+                            <button class="btn text-light form-btn" type="" id="btn-borrar">Borrar</button>
                         </div>
-                        <div class="d-grid col-md-6 ps-1 mb-3">
-                            <button class="btn text-light" type="submit" id="form-btn">Resumen</button>
+                        <div class="d-grid col-sm-6">
+                            <button class="btn text-light form-btn" type="submit" id="btn-resumen">Resumen</button>
                         </div>
                     </div>
                 </div>
@@ -140,5 +141,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="/tickets/tickets.js"></script>
 </body>
 </html>

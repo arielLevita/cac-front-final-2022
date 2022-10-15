@@ -82,15 +82,15 @@
                 <div class="container col-lg-6 col-md-8">
                     <div class="row mb-3 g-1">
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="floatingNombre">
+                            <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="floatingNombre" required>
                         </div>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" placeholder="Apellido" name="apellido" id="floatingApellido">
+                            <input type="text" class="form-control" placeholder="Apellido" name="apellido" id="floatingApellido" required>
                         </div>
                     </div>
                     
                     <div class="col mb-3">
-                        <input type="email" class="form-control" placeholder="Correo" name="email" id="floatingCorreo">
+                        <input type="email" class="form-control" placeholder="Correo" name="email" id="floatingCorreo" required>
                     </div>
 
                     <div class="row mb-3 g-1">
@@ -101,7 +101,8 @@
                         <div class="col-sm-6">
                             <label for="inputCategoria" class="mb-1">Categoría</label>
                             <select name="categoria" id="inputCategoria" class="form-select">
-                                <option value="estudiante" selected>Estudiante</option>
+                                <option value="" selected>Seleccione una categoría</option>
+                                <option value="estudiante">Estudiante</option>
                                 <option value="trainee">Trainee</option>
                                 <option value="junior">Junior</option>
                             </select>
@@ -110,7 +111,7 @@
 
                     <div class="col rounded-2 d-flex my-3" id="totalAPagar-box">
                         <p class="text-primary p-3 my-auto">Total a Pagar: $</p>
-                        <p class="text-primary p-3 m-auto fw-bolder" id="precioTotal"></p>
+                        <h4 class="text-primary m-auto" id="precioTotal"></h4>
                     </div>
 
                     <div class="row my-3 g-1">

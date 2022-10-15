@@ -9,7 +9,7 @@ btnResumen.addEventListener("click", (e) => {
         return document.getElementById("precioTotal").innerHTML = (200 * 0.2 * cant);
     } else if (categ == 'trainee') {
         return document.getElementById("precioTotal").innerHTML = (200 * 0.5 * cant);
-    } else {
+    } else if (categ == 'junior') {
         return document.getElementById("precioTotal").innerHTML = (200 * 0.85 * cant);
     }
 });
